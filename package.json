@@ -4,8 +4,10 @@
   "main": "index.js",
   "scripts": {
     "start": "ui5 serve -o index.html",
+    "build": "ui5 build --all --clean-dest",
     "test": "ui5 serve -o test/mockServer.html",
-    "test-qunit": "ui5 serve -o test/testsuite.qunit.html"
+    "test-qunit": "ui5 serve -o test/testsuite.qunit.html",
+    "serve-dist": "ws --compress -d dist --open"
   },
   "keywords": [],
   "author": "",
